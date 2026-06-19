@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+
+  <!-- Auth -->
+  <data name="Auth.InvalidCredentials"><value>Invalid username or password.</value></data>
+  <data name="Auth.UserNotFound"><value>User not found.</value></data>
+  <data name="Auth.UsernameExists"><value>Username already exists.</value></data>
+  <data name="Auth.EmailExists"><value>Email already registered.</value></data>
+  <data name="Auth.InvalidRole"><value>Invalid role. Use Admin, Employee, or Customer.</value></data>
+  <data name="Auth.EmailNotVerified"><value>Please verify your email before logging in.</value></data>
+  <data name="Auth.InvalidVerificationToken"><value>Invalid or expired verification token.</value></data>
+  <data name="Auth.EmailAlreadyVerified"><value>Email is already verified.</value></data>
+  <data name="Auth.InvalidResetToken"><value>Invalid or expired password reset token.</value></data>
+  <data name="Auth.PasswordMismatch"><value>New password and confirmation do not match.</value></data>
+  <data name="Auth.WrongCurrentPassword"><value>Current password is incorrect.</value></data>
+  <data name="Auth.VerificationSent"><value>Verification email sent. Please check your inbox.</value></data>
+  <data name="Auth.PasswordResetSent"><value>Password reset instructions sent to your email.</value></data>
+  <data name="Auth.PasswordChanged"><value>Password changed successfully.</value></data>
+  <data name="Auth.PasswordReset"><value>Password reset successfully.</value></data>
+  <data name="Auth.EmailVerified"><value>Email verified successfully. You can now log in.</value></data>
+
+  <!-- Validation -->
+  <data name="Validation.Required"><value>{0} is required.</value></data>
+  <data name="Validation.TooShort"><value>{0} must be at least {1} characters.</value></data>
+  <data name="Validation.TooLong"><value>{0} must not exceed {1} characters.</value></data>
+  <data name="Validation.InvalidEmail"><value>Invalid email address.</value></data>
+  <data name="Validation.InvalidAmount"><value>Amount must be greater than zero.</value></data>
+
+  <!-- General -->
+  <data name="General.NotFound"><value>{0} not found.</value></data>
+  <data name="General.Success"><value>Operation completed successfully.</value></data>
+  <data name="General.Unauthorized"><value>Authentication required.</value></data>
+  <data name="General.Forbidden"><value>You do not have permission to perform this action.</value></data>
+  <data name="General.RateLimitExceeded"><value>Too many requests. Please try again in {0} seconds.</value></data>
+
+  <!-- Employee -->
+  <data name="Employee.NotFound"><value>Employee not found.</value></data>
+  <data name="Employee.EmailExists"><value>An employee with this email already exists.</value></data>
+  <data name="Employee.Created"><value>Employee created successfully.</value></data>
+  <data name="Employee.Updated"><value>Employee updated successfully.</value></data>
+  <data name="Employee.Deleted"><value>Employee deleted successfully.</value></data>
+  <data name="Employee.Activated"><value>Employee activated successfully.</value></data>
+  <data name="Employee.Deactivated"><value>Employee deactivated successfully.</value></data>
+
+  <!-- Email Templates -->
+  <data name="Email.VerificationSubject"><value>Verify Your Email — Skeleton E-Commerce</value></data>
+  <data name="Email.PasswordResetSubject"><value>Password Reset Request — Skeleton E-Commerce</value></data>
+</root>

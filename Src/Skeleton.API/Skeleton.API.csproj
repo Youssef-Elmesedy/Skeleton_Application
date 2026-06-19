@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.5-beta1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
+
+    <!-- SignalR JS client (served from CDN — no package needed) -->
+    <!-- Health checks UI (optional) -->
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Skeleton.Application\Skeleton.Application.csproj" />
+    <ProjectReference Include="..\Skeleton.Infrastructure\Skeleton.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

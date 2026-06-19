@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Skeleton.API/Skeleton.API.csproj" />
+  <Project Path="Skeleton.Application/Skeleton.Application.csproj" />
+  <Project Path="Skeleton.Domain/Skeleton.Domain.csproj" />
+  <Project Path="Skeleton.Infrastructure/Skeleton.Infrastructure.csproj" />
+</Solution>

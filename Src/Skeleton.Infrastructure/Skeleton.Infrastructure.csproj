@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Skeleton.Application\Skeleton.Application.csproj" />
+    <ProjectReference Include="..\Skeleton.Domain\Skeleton.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- EF Core -->
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.StackExchangeRedis" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <!-- JWT -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.9" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.19.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
+
+    <!-- Caching -->
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.9" />
+
+    <!-- Hangfire -->
+    <PackageReference Include="Hangfire.Core" Version="1.8.23" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.8.23" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.23" />
+
+    <!-- SignalR (server side — included in ASP.NET Core, listed for clarity) -->
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.2.11" />
+
+    <!-- Health Checks -->
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="10.0.9" />
+  </ItemGroup>
+</Project>
